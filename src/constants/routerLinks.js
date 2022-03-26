@@ -1,0 +1,6 @@
+export const HOME_ROUTE = "/"
+export const LOGIN_ROUTE = "/login"
+export const PROFILE_ROUTE = "/profile"
+export const INFO_ROUTE = "/info"
+export const CALENDAR_ROUTE = "/calendar"
+export const DATA_ROUTE = "/data"

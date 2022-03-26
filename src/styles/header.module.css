@@ -1,0 +1,67 @@
+@import 'variables.css';
+
+.header {
+  height: 4rem;
+  background-color: var(--main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  border-radius: 3px;
+}
+
+.header > h2 {
+  color: var(--second);
+  font-size: 1.5rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--second);
+  font-weight: 700;
+  font-size: 2rem;
+  transition: .3s color linear;
+}
+.logo:hover {
+  color: var(--hover);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_link {
+  color: var(--second);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: .7rem;
+  transition: .3s color linear;
+}
+.nav_link:hover {
+  color: var(--hover);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav_link {
+    font-size: 1rem;
+  }
+  .header > h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .nav_link {
+    font-size: .6rem;
+  }
+  .header > h2 {
+    font-size: .6rem;
+  }
+}
