@@ -57,10 +57,16 @@ const Login = () => {
       ) : (
         <p>Hello {user.username}</p>
       )}
-
-      <button type="submit" onClick={submitData(username, password)}>
+      {!admin ? (
+        <button type="submit" onClick={submitData(username, password)}>
+          Confirm
+        </button>
+      ) : (
+        <p>Successful</p>
+      )}
+      {/* <button type="submit" onClick={submitData(username, password)}>
         Confirm
-      </button>
+      </button> */}
     </div>
   );
 };

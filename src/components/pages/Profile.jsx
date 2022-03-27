@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { LOGIN_ROUTE } from "../../constants/routerLinks";
 const Profile = () => {
   const { isLogin } = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user.user);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -12,7 +14,7 @@ const Profile = () => {
     }
   }, [isLogin, navigate]);
 
-  return <div>Profile</div>;
+  return <div>Profile {user.username}</div>;
 };
 
 export default Profile;

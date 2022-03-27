@@ -1,0 +1,27 @@
+@import 'variables.css';
+
+.container_inner {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table > tbody > tr > td {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .3s linear;
+  border: 1px solid var(--main);
+}
+
+table > tbody > tr > td:hover {
+  background-color: var(--main);
+}
+
+.today {
+  background-color: var(--hover);
+}
+
