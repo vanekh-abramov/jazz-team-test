@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { checkIsAdmin, setIsAdmin } from "../../actions/action";
-import style from "../../styles/login.module.css";
+import styles from "../../styles/login.module.css";
 import { mainUser } from "../../user";
 
 const Login = () => {
@@ -27,7 +27,6 @@ const Login = () => {
       dispatch(checkIsAdmin({ username, password }));
     };
   };
-  console.log(visibleText);
   useEffect(() => {
     if (JSON.stringify(mainUser) === JSON.stringify(user)) {
       dispatch(setIsAdmin(true));
@@ -35,9 +34,10 @@ const Login = () => {
   }, [user, dispatch, admin]);
 
   return (
-    <div className={style.container}>
+    <div className={styles.container}>
       <p>Login</p>
       <input
+        className={styles.input}
         onChange={usernameHandler}
         value={username}
         name="username"
@@ -45,6 +45,7 @@ const Login = () => {
         placeholder="Enter your username...."
       />
       <input
+        className={styles.input}
         onChange={passwordHandler}
         value={password}
         name="password"
@@ -64,9 +65,6 @@ const Login = () => {
       ) : (
         <p>Successful</p>
       )}
-      {/* <button type="submit" onClick={submitData(username, password)}>
-        Confirm
-      </button> */}
     </div>
   );
 };

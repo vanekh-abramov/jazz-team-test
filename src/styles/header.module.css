@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import "variables.css";
 
 .header {
   height: 4rem;
@@ -20,7 +20,7 @@
   color: var(--second);
   font-weight: 700;
   font-size: 2rem;
-  transition: .3s color linear;
+  transition: 0.3s color linear;
 }
 .logo:hover {
   color: var(--hover);
@@ -36,8 +36,8 @@
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
-  margin-left: .7rem;
-  transition: .3s color linear;
+  margin-left: 0.7rem;
+  transition: 0.3s color linear;
 }
 .nav_link:hover {
   color: var(--hover);
@@ -59,9 +59,9 @@
     font-size: 1rem;
   }
   .nav_link {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   .header > h2 {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 }

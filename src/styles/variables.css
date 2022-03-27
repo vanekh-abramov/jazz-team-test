@@ -1,23 +1,15 @@
 :root {
-  --main: #7353BA;
-  --second: #FAA6FF;
-  --third: #0F1020;
+  --main: #7353ba;
+  --second: #faa6ff;
+  --third: #0f1020;
   --hover: #45da83;
 }
-
 
 p {
   font-size: 1.5rem;
   padding-bottom: 10px;
   font-weight: bold;
   color: var(--second);
-}
-
-input {
-  padding: 10px;
-  width: 250px;
-  height: 70px;
-  border-radius: 3px;
 }
 
 button {
@@ -33,4 +25,3 @@ button {
 button:hover {
   transform: scale(1.1);
 }
-

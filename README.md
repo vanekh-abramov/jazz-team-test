@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# jazz-team-test
+Реализовано приложение, которое отображает несколько страниц, в зависимости от url браузера.
+	
+Использовался следующий стек технологий:
+JavaScript
+Web-фреймворк: React/Redux
+CSS - не использовались сторонние CSS-библиотеки или препроцессоры
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Описание страниц:
+<ol>
+  <li>/ - главная страница.</li>
+  <li>/login - Авторизация - страница авторизации.</li>
+  <li>/profile - Профиль - страница, которая отображает любую информацию об авторизованном пользователе. Должна быть закрыта без авторизации.</li>
+  <li>/info - Информация - страница с любой однородной информацией.</li>
+  <li>/calendar - Календарь - страница с календарём.</li>
+  <li>/data - Таблица с данными - страница с любыми данными.</li>
+</ol>
 
-## Available Scripts
+Реализована верхняя панель навигации, которая отображается на всех страницах приложения и содержит ссылки на все страницы.
 
-In the project directory, you can run:
+Реализован переход на страницу Авторизация при попытке войти в (Профиль, Календарь, Таблицу с данными), если пользователь не авторизован.
 
-### `npm start`
+Реализовано отображение имени авторизованного пользователя на панели навигации.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Для авторизации пользователя использовались фейковые данные username: Admin, password: 12345678.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+При попытке ввести некорректные данные отображается сообщение "Implemented a transition to the Authorization page on the recommendation to enter the Profile if the user is not authorized.".
 
-### `npm test`
+<h2>Календарь</h2>
+Реализована в приложении страница, на которой отображен календарь. Путь url, по которому страница доступна в приложении, /calendar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Страница закрыта без авторизации.
 
-### `npm run build`
+Реализован переход по месяцам.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>Таблица с данными</h2>
+Реализована в приложении страница, на которой отображена таблица с данными. Путь url, по которому страница доступна в приложении, /data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Страница закрыта без авторизации.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Исходные данные для таблицы реализованы в json формате и помещены в отдельный json файл.
 
-### `npm run eject`
+Реализовано редактирование ячеек таблицы при нажатии левой клавиши мыши.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h2>Дополнительные условия соблюдены</h2>
+Код приложения помещен в GitHub репозиторий с описанием. 
+Каждая отдельная задача тестового задания оформлена отдельного коммита.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***P.s. 2 дня для меня было маловато ((( часть функционала и дизайна сделать не успел***

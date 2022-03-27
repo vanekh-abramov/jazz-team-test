@@ -1,11 +1,9 @@
-// import { user } from "../user"
-
 export const CHECK_IS_ADMIN = 'CHECK_IS_ADMIN'
 export const SET_IS_ADMIN = 'SET_IS_ADMIN'
 
 const initialState = {
   user: {},
-  isLogin: false
+  isLogin: false,
 }
 
 export const userReducer = (state = initialState, action) => {
@@ -15,7 +13,7 @@ export const userReducer = (state = initialState, action) => {
         ...state,
         user: action.payload
       }
-      case SET_IS_ADMIN:
+    case SET_IS_ADMIN:
       return {
         ...state,
         isLogin: action.payload

@@ -22,3 +22,9 @@ form {
   height: 100%;
 }
 
+.input {
+  padding: 10px;
+  width: 250px;
+  height: 70px;
+  border-radius: 3px;
+}

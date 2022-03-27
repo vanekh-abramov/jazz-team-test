@@ -48,7 +48,6 @@ const Header = () => {
         </nav>
 
         {admin ? <h2>{user.username}</h2> : false}
-
       </header>
     </>
   );

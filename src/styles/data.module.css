@@ -1,0 +1,20 @@
+@import "variables.css";
+
+.container_inner {
+  display: contents;
+  height: 100%;
+  overflow: hidden;
+}
+.table {
+  display: block;
+  width: 40vw;
+  height: 50vh;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.data_input {
+  outline-style: none;
+  border: 0;
+  width: 200px;
+}

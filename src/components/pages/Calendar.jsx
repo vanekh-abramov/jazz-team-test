@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { LOGIN_ROUTE } from "../../constants/routerLinks";
 import useCalendar from "../../hooks/useCalendar";
 import styles from "../../styles/calendar.module.css";
-import '../../styles/calendar.css'
+import "../../styles/calendar.css";
 const Calendar = () => {
-
   const { isLogin } = useSelector((state) => state.user);
   const navigate = useNavigate();
 
@@ -19,13 +18,6 @@ const Calendar = () => {
     getNextMonth,
     getPrevMonth,
   } = useCalendar();
-
-  // console.log(calendarRows[1][1])
-
-  const clickHandler = (e, date, value, tiketValue) => {
-    // console.log(e.target, date, value, tiketValue);
-    // console.log(calendarRows.cols)
-  };
 
   useEffect(() => {
     if (!isLogin) {
@@ -58,7 +50,6 @@ const Calendar = () => {
                     <td
                       key={col.date}
                       className={styles.today}
-                      onClick={(e) => clickHandler(e, col.date, col.value, col.tiketValue)}
                     >
                       {col.value}
                       <p>{col.tiketValue}</p>
@@ -67,7 +58,6 @@ const Calendar = () => {
                     <td
                       key={col.date}
                       className={col.classes}
-                      onClick={(e) => clickHandler(e, col.date, col.value, col.tiketValue)}
                     >
                       {col.value}
                       <p>{col.tiketValue}</p>
